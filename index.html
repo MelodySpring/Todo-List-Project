@@ -4,13 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <title>ToDo List</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <div class="notebook">
+        <h1>TO DO List</h1>
+        <p>This is a todo list. Enter the item you would like to add and click the submit button to add it. Click the
+            delete button when you have completed the item.</p>
+        <form id="todoList">
+            <label for="itemAdd">What would you like to add?</label>
+            <input type="text" id="itemAdd">
+            <button id="addBtn">ADD</button>
 
+
+        </form>
+        <h2>Items</h2>
+        <ul id="newItem">
+
+        </ul>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
-<script src="./assets/js/script.js"></script>
+
 
 </html>
