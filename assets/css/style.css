@@ -1,0 +1,92 @@
+body {
+    background-color: #e2f0f4;
+    font-family: "Handlee", cursive;
+    padding: 40px;
+}
+
+.notebook {
+    width: 600px;
+    min-height: 800px;
+    margin: auto;
+    padding: 40px 50px;
+    background-color: #e8e3dd;
+
+    background-image:
+        repeating-linear-gradient(to bottom,
+            transparent 0px,
+            transparent 23px,
+            #cc1e41 23px,
+            #cc1e41 24px);
+    border-left: 4px solid #cc1e41;
+    padding-left: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-size: 100% 24px;
+}
+
+h1 {
+    font-family: "Handlee", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+}
+
+p {
+    font-family: "Handlee", cursive;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+
+
+}
+
+label[for="itemAdd"] {
+    font-family: "Handlee", cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#itemAdd {
+    width: 500px;
+    height: 20px;
+}
+
+#addBtn {
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: #ee4747;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#newItem {
+    font-family: "Handlee", cursive;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-family: "Handlee", cursive;
+    font-size: 40px;
+    text-decoration: underline #ee4747;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.delete-btn {
+    margin-left: 10px;
+    background: #ee4747;
+    color: white;
+    border: 1px solid black;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
