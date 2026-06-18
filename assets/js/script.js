@@ -16,6 +16,7 @@ form.addEventListener("submit", function (e) {
     var existingItems = document.querySelectorAll("#newItem li span");
     for (var span of existingItems) {
         if (span.innerText.toLowerCase() === item.toLowerCase()) {
+            input.value = "";
             alert("That item already exists, please enter a new ToDo.");
             return;
         }
@@ -28,7 +29,7 @@ form.addEventListener("submit", function (e) {
     textSpan.innerText = item;
 
     var deleteBtn = document.createElement("button");
-    deleteBtn.innerText = "Delete";
+    deleteBtn.innerText = "DELETE";
     deleteBtn.classList.add("delete-btn");
 
     deleteBtn.addEventListener("click", function () {
