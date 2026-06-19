@@ -8,16 +8,15 @@ form.addEventListener("submit", function (e) {
     var item = input.value.trim();
 
     if (item === "") {
-        alert("Please enter an item.");
+        alert("Nothing entered. Please enter an item.");
         return;
     }
 
-    // Duplicate check (only compare the text span)
     var existingItems = document.querySelectorAll("#newItem li span");
     for (var span of existingItems) {
         if (span.innerText.toLowerCase() === item.toLowerCase()) {
             input.value = "";
-            alert("That item already exists, please enter a new ToDo.");
+            alert("That item already exists, please enter a new To Do item.");
             return;
         }
     }
