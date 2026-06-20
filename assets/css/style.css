@@ -22,8 +22,8 @@ body {
         repeating-linear-gradient(to bottom,
             transparent 0px,
             transparent 23px,
-            var(--main-color) 23px,
-            var(--main-color) 24px);
+            #8d8d8d 23px,
+            #8d8d8d 24px);
     border-left: 4px solid var(--main-color);
     padding-left: 30px;
     box-shadow: 0 4px 15px #6b6c6f;
@@ -36,13 +36,16 @@ h1 {
     margin-top: 0;
     text-align: center;
     margin-bottom: 0;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 p {
     font-size: 25px;
     line-height: 30px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 15px;
+    text-align: left;
 }
 
 b {
@@ -84,6 +87,7 @@ label[for="itemAdd"] {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 50px;
+    margin-left: -40px;
     color: #2a27f5;
     text-align: left;
 
