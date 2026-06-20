@@ -1,8 +1,6 @@
 :root {
 
     --main-color: #cc1e41;
-    --font-main: "Handlee", cursive;
-
 }
 
 body {
@@ -11,13 +9,15 @@ body {
     padding: 40px;
 }
 
+/* I used a resource on Google to create the notepaper effect as I didn't know where to start and wanted to use it as it was in my wireframe but made some modifications to get exactly what I wanted*/
 .notebook {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     min-height: 800px;
     margin: auto;
+    box-sizing: border-box;
     padding: 40px 50px;
     background-color: #e8e3dd;
-    box-sizing: border-box;
     background-image:
         repeating-linear-gradient(to bottom,
             transparent 0px,
@@ -39,15 +39,15 @@ h1 {
 }
 
 p {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 30px;
     font-weight: bold;
     margin-top: 5px;
 }
 
 b {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 30px;
     font-weight: bold;
     color: var(--main-color);
 }
@@ -58,13 +58,16 @@ label[for="itemAdd"] {
 }
 
 #itemAdd {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
     height: 30px;
     font-size: 20px;
 }
 
 #addBtn {
     height: 40px;
+    width: 150px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 15px;
@@ -82,25 +85,41 @@ label[for="itemAdd"] {
     margin-top: 0;
     margin-bottom: 50px;
     color: #2a27f5;
+    text-align: left;
 
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 h2 {
     font-size: 40px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 5px;
     text-align: center;
 
 }
 
 #newItem li {
-    padding-bottom: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0;
 }
 
+#newItem li::before {
+    content: "•";
+    margin-right: 8px;
+    color: black;
+}
 
 .delete-btn {
-    margin-left: 10px;
+    margin-left: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     background: var(--main-color);
@@ -109,4 +128,31 @@ h2 {
     padding: 3px 8px;
     cursor: pointer;
     border-radius: 4px;
+
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .notebook {
+        padding: 20px;
+        padding-left: 25px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    #itemAdd {
+        display: block;
+        width: 100%;
+    }
+
+    #addBtn {
+        display: block;
+        margin-left: 0;
+        margin-top: 8px;
+    }
 }
