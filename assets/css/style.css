@@ -17,7 +17,7 @@ body {
     margin: auto;
     padding: 40px 50px;
     background-color: #e8e3dd;
-
+    box-sizing: border-box;
     background-image:
         repeating-linear-gradient(to bottom,
             transparent 0px,
